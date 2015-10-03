@@ -59,7 +59,13 @@ Are SET a valid measure of teaching effectiveness?
 \frame
 {
   \frametitle{\cite{Boring2015}}
- some stuff about Anne's data
+  \Large
+\begin{itemize}
+\item Census of SET by first-year undergraduates, collected 2008--2013
+\item Students sign up for class times, don't know instructors; it's ``as if'' at random
+\item Male students tend to rate male instructors higher than females students do 
+\item SET correlate with grade expectations but not final grades
+\end{itemize}
 }
 
 \frame
@@ -68,7 +74,7 @@ Are SET a valid measure of teaching effectiveness?
 \begin{itemize}
 \item Randomized, controlled experiment of students' perceptions of gender in an online course
 \item Female-identified TA was rated lower in all categories (especially ``fair'' and ``prompt'') on average
-\item Average ``Overall'' rating in each section
+\item Average ``overall'' rating in each section
 \end{itemize}
 \begin{table}[htdp]
 \begin{center}
@@ -89,9 +95,14 @@ Female instructor & 3.625 & 4.333\\
 \frame
 {
  \frametitle{Permutation tests}
+\Large
  \begin{itemize}
- \item Model-free, distribution-free test
- \item Give exact level of test without crazy assumptions, only assume the randomization of the treatments
+ \item Distribution-free tests, always give correct significance levels
+ \item Compare assumptions:
+ \begin{itemize}
+ \item Two-sample t-test: independent samples from normal distribution
+ \item Permutation test: randomization was fair
+ \end{itemize}
  \item{Python package: permute \\
  \url{https://github.com/statlab/permute}
  }
