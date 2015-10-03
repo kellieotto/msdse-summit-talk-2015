@@ -2,15 +2,17 @@
 
 \usepackage{beamerthemesplit}
 \usepackage{graphicx}
-\usepackage{color}
+\usepackage{color, natbib, hyperref}
 
 %theme
 
-\usetheme[secheader]{Boadilla} 
+\usetheme{boxes} 
+%\usecolortheme{seahorse} 
 \setbeamertemplate{items}[default] 
-\setbeamercovered{transparent}
+%\setbeamercovered{transparent}
 \setbeamertemplate{blocks}[rounded][shadow=true] 
 \setbeamertemplate{navigation symbols}{} 
+
 \mode<presentation>
 
 \title[SET]{Student Evaluations of Teaching (Mostly) Do Not Measure Teaching Effectiveness}
@@ -25,24 +27,66 @@
 \section{Introduction}
 \frame
 {
-  \frametitle{Motivation}
-Student evaluations of teachers (SET) are used to
+  \frametitle{}
+ \begin{center}
+ \Large{ Student evaluations of teachers (SET) are used to} \\
   \begin{itemize}
   \item Quantify teaching effectiveness
   \item Compare instructors across courses
   \item Make hiring, firing, and promotion decisions  
   \end{itemize}
-
-Are SET a fair and meaningful measure?
+  \vfill
+Are SET a valid measure of teaching effectiveness?
+\end{center}
 }
 
-\section{Conclusions}
 \frame
 {
+  \frametitle{}
+  \begin{center}
+  \Huge{No!}
+\vfill
+\Large
   \begin{itemize}
   \item SET measure ``customer satisfaction''
-  \item Biased against female instructors
+  \item Ratings are biased against female instructors
   \item Biases are inconsistent across universities and disciplines; impossible to ``adjust'' SET
   \end{itemize}
+  \end{center}
 }
+
+\section{The Data}
+\frame
+{
+  \frametitle{\cite{Boring2015}}
+ some stuff about Anne's data
+}
+
+\frame
+{
+  \frametitle{\cite{MacNell2014}}
+some stuff about Lilly's data
+}
+
+\section{Analysis}
+\frame
+{
+ \frametitle{Permutation tests}
+ \begin{itemize}
+ \item Model-free, distribution-free test
+ \item Give exact level of test without crazy assumptions, only assume the randomization of the treatments
+ \item{Python package: permute \\
+ \url{https://github.com/statlab/permute}
+ }
+ \end{itemize}
+
+}
+
+\section{References}
+\begin{frame}
+\frametitle{References}
+\bibliographystyle{plainnat}
+\bibliography{SETs}
+\itemize
+\end{frame}
 \end{document}
