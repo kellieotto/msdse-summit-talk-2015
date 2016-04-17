@@ -6,4 +6,5 @@
 *.snm
 *.toc
 *.blg
+*.bbl
 .DS_Store
