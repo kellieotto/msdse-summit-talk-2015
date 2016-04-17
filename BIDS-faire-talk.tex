@@ -63,6 +63,9 @@
     \end{center}
     \end{column}
   \end{columns}
+  \vspace{20pt}
+  \small
+  Boring, A., K. Ottoboni and P.B. Stark, 2016. \href{https://www.scienceopen.com/document?vid=818d8ec0-5908-47d8-86b4-5dc38f04b23e}{Teaching Evaluations (Mostly) Do Not Measure Teaching Effectiveness}, ScienceOpen Research.
 }
 
 \frame
@@ -89,12 +92,6 @@ Are SET a valid measure of teaching effectiveness?
 
 \vfill
 \Large
-%  \begin{itemize}
-%  \item SET measure ``customer satisfaction''
-%  \item Ratings are biased against female instructors
-%  \item Biases are inconsistent across universities and disciplines; impossible to ``adjust'' SET
-%  \end{itemize}
-
 
 We reanalyzed data from two studies: 
 \begin{itemize}
@@ -113,6 +110,7 @@ We reanalyzed data from two studies:
 \begin{column}{.5\textwidth}
 \begin{center}
 \begin{itemize}
+%\itemsep 8pt
 \item Census of SET by first-year undergraduates, collected 2008--2013
 \item Students sign up for class times, don't know instructors; it's ``as if'' at random
 \item Male instructors are rated higher by male students than by female students
@@ -121,7 +119,9 @@ We reanalyzed data from two studies:
 \end{center}
 \end{column}
 \begin{column}{.5\textwidth}
-% figures
+\begin{center}
+\includegraphics[width=\textwidth]{fig/dotplot.png}
+\end{center}
 \end{column}
 \end{columns}
 
@@ -134,8 +134,8 @@ We reanalyzed data from two studies:
 \begin{columns}[T]
 \begin{column}{.5\textwidth}
 \begin{center}
-
 \begin{itemize}
+\itemsep 15pt
 \item Students randomized to 4 online sections of a course
 \item In two sections, the TAs swapped identities
 \item Female-identified TA was rated lower on average in all categories
@@ -168,26 +168,45 @@ Responsive & -0.22
 
 
 
+\frame{
+\frametitle{Conclusions}
+\Large
+  \begin{itemize}
+  \itemsep 20pt
+  \item SET measure ``customer satisfaction''
+  \item Ratings are biased against female instructors
+  \item Biases are inconsistent across universities and disciplines, so it's impossible to ``adjust'' SET
+  \end{itemize}
+}
+
 \section{Analysis}
 \frame
 {
- \frametitle{Permutation tests}
+ \frametitle{Data Science?}
 \Large
  \begin{itemize}
- \item Distribution-free tests, always give correct significance levels
- \item Compare assumptions:
- \begin{itemize}
- \item Two-sample t-test: independent samples from normal distribution
- \item Permutation test: randomization was fair
- \end{itemize}
+ \itemsep 20pt
+ \item Carefully designed statistical tests to match the experimental design
  \item{Python package: permute \\
  \url{https://github.com/statlab/permute}
+ }
+ \item{Analyses in Jupyter notebooks in a GitHub repository \\
+ \url{https://github.com/kellieotto/SET-and-gender-bias}
  }
  \end{itemize}
 
 }
 
 \section{References}
+
+\frame{
+\frametitle{~}
+\begin{center}
+\Huge
+Thanks!
+\end{center}
+}
+
 \begin{frame}
 \frametitle{References}
 \bibliographystyle{plainnat}
